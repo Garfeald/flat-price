@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NMarket</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="main">
+            <div class="conteiner">
+                <div class="block-left">
+                    <div class="block-image">
+                        <div class="block-image__item">
+                            <img src="./images/Group.svg" alt="schema">
+                        </div>
+                    </div>
+                    <div class="block-cross-2" onclick="activeCross2()">
+                        <img src="./images/Shape.svg" alt="cross" class="cross-2">
+                        <img src="./images/Shape-2.svg" alt="cross" class="cross-2-black">
+                    </div>
+                    <div class="block-details">
+                        <div class="details-items">
+                            <div class="details-header">
+                                <p class="details-header__item">
+                                    2-к квартира
+                                </p>
+                            </div>
+                            <div class="description">
+                                <div class="description-item">
+                                    <p class="description-item__key">Этаж</p>
+                                    <p class="description-item__value">2 из 19</p>
+                                </div>
+                                <div class="description-item">
+                                    <p class="description-item__key">Высота потолков</p>
+                                    <p class="description-item__value">3,2 м</p>
+                                </div>
+                                <div class="description-item">
+                                    <p class="description-item__key">Отделка</p>
+                                    <p class="description-item__value">Предчистовая</p>
+                                </div>
+                                <div class="description-item">
+                                    <p class="description-item__key">Общая площадь</p>
+                                    <p class="description-item__value">32,24 м²</p>
+                                </div>
+                                <div class="description-item">
+                                    <p class="description-item__key">Жилая площадь</p>
+                                    <p class="description-item__value">22,24 м²</p>
+                                </div>
+                                <div class="description-item">
+                                    <p class="description-item__key">Площадь кухни</p>
+                                    <p class="description-item__value">14,24 м²</p>
+                                </div>
+                            </div>
+                            <div class="status">
+                                <div class="status-green"> 
+                                    <div class="status-green__items">
+                                        <img src="./images/Path 7.svg" alt="check" class="image-green">
+                                        <p class="text-green">Вы были на просмотре</p>
+                                    </div>
+                                </div>
+                                <div class="status-red">
+                                    <div class="status-red__items">
+                                        <img src="./images/2. Icon.svg" alt="cross" class="image-red">
+                                        <p class="text-red">Дом аккредитован другим банком</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-right">
+                    <div class="block-divider">
+                        <div class="hr"></div>
+                    </div>
+                    <div class="block-cross" onclick="activeCross()">
+                        <img src="./images/Shape.svg" alt="cross" class="cross">
+                        <img src="./images/Shape-2.svg" alt="cross" class="cross-black">
+                    </div>
+                    <div class="block-price">
+                        <div class="price-items">
+                            <div class="price-header">
+                                <p class="price-header__text">Ваша цена по брони до</p>
+                                <p class="price-header__date">19 сентября</p>
+                            </div>
+                            <div class="price-total">
+                                <p class="price-total__item">3 312 666 Р</p>
+                            </div>
+                            <div class="price-description">
+                                <p class="price-header__text">Текущая цена у застройщика</p>
+                                <span class="price-header__text">дороже на</span>
+                                <span class="price-description__date">324 825 Р</span>
+                            </div>
+                            <div class="price-button">
+                                <button class="price-button__button" onclick="onChangeButton()">Выбрать для покупки</button>
+                                <img src="./images/Combined Shape.svg" alt="key" class="price-button__image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

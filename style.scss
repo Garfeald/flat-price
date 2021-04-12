@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+$font-family: 'Roboto';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+}
+
+@mixin displayFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin displayFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin displayFlexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+button{
+    border: none; 
+    outline: none; 
+}
+
+body{
+    width: 100%;
+    min-height: 600px;
+    margin: auto;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 600px;
+    @include displayFlexCenter();
+}
+
+.main{
+    width: 100%;
+    min-height: 306px;
+    background: #F5F4F2;
+    @include displayFlexCenter();
+    margin: 0 auto;
+}
+
+.conteiner{
+    @include displayFlex;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 226px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    margin: 40px 40px;
+}
+
+///////////////////////////////////////////////////////////// cross //////////////////////////////////////////////////////////////////
+
+.cross-black{
+    display: none;
+}
+
+.block-cross{
+    position: absolute;
+    top: 200px;
+    margin-left: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px !important;
+    height: 28px !important;
+    &:hover{
+        cursor: pointer;
+    }
+    &:hover{
+        cursor: pointer;
+        background: #F5F4F2;
+        border-radius: 4px;
+    }
+
+    &:hover .cross{
+        display: none;
+    }
+
+    &:hover .cross-black{
+        display: flex;
+    }
+}
+
+.cross{
+    position: absolute;
+}
+
+.cross-active{
+    display: none;
+    border-radius: 4px;
+}
+
+.block-cross-active{
+    background: #E7E4DE;
+    border-radius: 4px;
+}
+
+.cross-black-active{
+    display: flex;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////// cross-2 ////////////////////////////////////////////////////////////////
+
+.cross-2-black{
+    display: none;
+}
+
+.block-cross-2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 55px;
+    top: 65px;
+    &:hover{
+        cursor: pointer;
+        background: #F5F4F2;
+        border-radius: 4px;
+    }
+
+    &:hover .cross-2{
+        display: none;
+    }
+
+    &:hover .cross-2-black{
+        display: flex;
+    }
+}
+
+.cross-2{
+    position: absolute;
+}
+
+.cross-2-active{
+    display: none;
+    border-radius: 4px;
+}
+
+.block-cross-2-active{
+    background: #E7E4DE;
+    border-radius: 4px;
+}
+
+.cross-2-black-active{
+    display: flex;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+.block-left{
+    @include displayFlexStart();
+}
+
+.block-image{
+    width: 86.39px;
+    height: 160.32px;
+    margin-left: 70px;
+    margin-right: 70px;
+    z-index: 1000;
+}
+
+.block-image__item{
+    display: flex;
+    align-items: start;
+}
+
+.block-details{
+    @include displayFlexStart;
+}
+
+
+.details-header__item{
+    display: flex;
+    justify-content: start;
+    color: #383736;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.description{
+    @include displayFlex;
+    flex-wrap: wrap;
+    max-width: 440px;
+}
+
+.description-item{
+    width: 98px;
+    height: 27px;
+    margin: 10px 0;
+    margin-right: 45px;
+}
+
+.description-item__key{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #989691;
+}
+
+.description-item__value{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #383736;
+}
+
+.status{
+    @include displayFlex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.status-green__items{
+    @include displayFlex;
+    background: #F2FAF0;
+    border-radius: 22px;
+    width: 184px;
+    height: 32px;
+    margin-right: 16px;
+}
+
+.status-red__items{
+    @include displayFlex;
+    background: #FAF0F0;
+    border-radius: 22px;
+    width: 249px;
+    height: 32px;
+}
+
+.image-green{
+    margin-left: 16px;
+}
+
+.image-red{
+    margin-left: 16px;
+}
+
+.text-green{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #64B851;
+    margin-right: 16px;
+}
+
+.text-red{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #EB4B51;
+    margin-right: 16px;
+}
+
+.block-divider{
+    max-height: 652px;
+}
+
+.hr{
+    position: absolute;
+    width: 1px;
+    height: 178px;
+    background: #F0EEEB;
+}
+
+.block-price{
+    margin: 0 32px ;
+}
+
+.price-header{
+    @include displayFlexStart;
+    max-width: 268px;
+}
+
+.price-header__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #989691;
+    margin-right: 5px;
+}
+
+.price-header__date{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2794DB;
+}
+
+.price-total{
+    @include displayFlexStart;
+    height: 36px;
+}
+
+.price-total__item{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #383736;
+}
+
+.price-description{
+    margin-top: 12px;
+}
+
+.price-description__date{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #EB4B51;
+}
+
+.price-button{
+    @include displayFlexCenter;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.price-button__button{
+    background: #FAC62D;
+    border-radius: 6px;
+    width: 268px;
+    height: 44px;
+    margin-top: 22px;
+    &:hover{
+        background: #F0B505;
+        cursor: pointer;
+    }
+}
+
+.button-active{
+    background: #E1AB08;
+}
+
+.price-button__image{
+    position: absolute;
+    padding: 20px 180px 0 0;
+}
+
+////////////////////////////////////////////////////////////// === @media == ////////////////////////////////////////////////////////////////////////////
+
+@media(max-width: 1280px){
+}
+
+@media(max-width: 1160px){
+    .status-green__items{
+        margin-bottom: 10px;
+    }
+
+    .status-red__items{
+        margin-bottom: 10px;
+    }
+
+    .description-item{
+        width: 98px;
+        margin: 10px 0;
+        margin-right: 30px;
+    }
+
+    .conteiner{
+        min-height: 314px;
+    }
+
+    .block-cross{
+        position: absolute;
+        top: 160px;
+        margin-left: 290px;
+    }
+}
+
+@media(max-width: 920px){
+    .block-image{
+        margin-bottom: 100px;
+    }
+
+    .price-button{
+        margin-top: 90px;
+        margin-bottom: 10px;
+    }
+
+    .hr{
+        position: absolute;
+        width: 1px;
+        height: 266px;
+        background: #F0EEEB;
+    }
+}
+
+@media(max-width: 865px){
+    .block-image{
+        margin-bottom: 50px;
+    }
+
+    .block-price{
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .block-right{
+        margin: 0 32px ;
+    }
+
+    .price-button{
+        margin-top: 24px;
+    }
+
+    .conteiner{
+        flex-wrap: wrap;
+        min-height:502px;
+        max-width: 712px;
+    }
+
+    .description{
+        max-width: 300px;
+    }
+
+    .description-item{
+        width: 98px;
+        margin: 10px 0;
+        margin-right: 30px;
+    }
+
+    .price-button__button{
+        width: 100%;
+        max-width: 652px;
+    }
+    
+    .status-green__items{
+        margin-right: 10px;
+    }
+
+    .block-right{
+        width: 100%;
+        max-width: 712px;
+    }
+
+    .block-price{
+        margin: 20px 0px ;
+    }
+
+    .hr{
+        position: static;
+        width: 100%;
+        margin: 20px 0px;
+        height: 1px;
+        background: #F0EEEB;
+    }
+
+    .block-cross{
+        display: none;
+    }
+
+    .block-cross-2{
+        display: flex;
+    }
+}
+
+@media(max-width: 600px){
+    .block-image{
+        margin-top: 26px;
+    }
+    .block-left{
+        flex-wrap: wrap;
+        @include displayFlexCenter;
+        margin: 0 20px;
+    }
+
+    .block-right{
+        margin: 0 20px ;
+    }
+
+    .block-price{
+        margin: 20px 0px ;
+    }
+
+    .block-cross-2{
+        display: flex;
+    }
+
+    .block-cross-2{
+        position: absolute;
+        right: 60px;
+        top: 60px;
+    }
+}
+
+@media(max-width: 400px){
+
+    .conteiner{
+        margin: 40px 8px;
+    }
+
+    .block-cross-2{
+        position: absolute;
+        right: 25px;
+        top: 55px;
+    }
+}
